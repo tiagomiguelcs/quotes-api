@@ -33,18 +33,3 @@ export async function getQuotesByYear(year) {
     const quotes = await loadQuotes();
     return quotes.filter(q => q.year === year);
 }
-
-// const random = await getRandomQuote();
-// console.log("Random quote:");
-// console.log(random);
-// const ironMan = await getQuoteByMovie("Avengers: Endgame");
-// console.log("Movie:");
-// console.log(ironMan);
-// const serious = await searchQuotes("serious");
-// console.log("Search:");
-// console.log(serious);
-
-// Usage example
-// const quote = await getRandomQuote();
-// document.getElementById("output").textContent =
-// JSON.stringify(quote, null);
