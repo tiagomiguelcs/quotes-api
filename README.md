@@ -8,7 +8,6 @@ A lightweight, static movie quotes API hosted on GitHub Pages. Data is sourced f
 ```
 quotes-api/
 ├── api.js              # ES module with query functions
-├── index.html          # Demo page
 ├── server.sh           # Local development server script
 ├── data/
 │   └── movies.json     # Quote dataset
