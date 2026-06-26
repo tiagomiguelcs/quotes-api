@@ -135,7 +135,7 @@
     "quote": "Where we’re going, we don’t need roads",
     "movie": "Back to the Future",
     "type": "movie",
-    "year": 1958
+    "year": 1985
   },
   {
     "quote": "Life is a banquet, and most poor suckers are starving to death!",
@@ -748,6 +748,24 @@
     "movie": "Back to the Future Part II",
     "type": "movie",
     "year": 1989
+  },
+  {
+    "quote": "Your future is whatever you make it. So make it a good one.",
+    "movie": "Back to the Future Part III",
+    "type": "movie",
+    "year": 1990
+  },
+  {
+    "quote": "Great Scott!",
+    "movie": "Back to the Future Part III",
+    "type": "movie",
+    "year": 1990
+  },
+  {
+    "quote": "Nobody calls me yellow.",
+    "movie": "Back to the Future Part III",
+    "type": "movie",
+    "year": 1990
   },
   {
     "quote": "Carpe diem. Seize the day, boys. Make your lives extraordinary.",
