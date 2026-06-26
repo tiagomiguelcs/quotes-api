@@ -1,5 +1,6 @@
 const BASE_URL = new URL(".", import.meta.url).origin;
-const DATA_URL = `${BASE_URL}/quotes-api/data/movies.json`;
+// const DATA_URL = `${BASE_URL}/quotes-api/data/movies.json`;
+const DATA_URL = `${BASE_URL}/data/movies.json`;
 
 async function loadQuotes() {
     const response = await fetch(DATA_URL);
@@ -21,6 +22,15 @@ export async function getQuoteByMovie(movie) {
     const quotes = await loadQuotes();
     const results = quotes.filter(
         q => q.movie.toLowerCase() === movie.toLowerCase() || q.movie.toLowerCase().includes(movie.toLowerCase())
+    );
+    const quote = results[Math.floor(Math.random() * results.length)];
+    return(quote);
+}
+
+export async function getQuoteByMovies(movies) {
+    const quotes = await loadQuotes();
+    const results = quotes.filter(
+        q => movies.some(movie => q.movie.toLowerCase() === movie.toLowerCase() || q.movie.toLowerCase().includes(movie.toLowerCase()))
     );
     const quote = results[Math.floor(Math.random() * results.length)];
     return(quote);

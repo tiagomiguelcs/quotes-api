@@ -21,7 +21,7 @@ quotes-api/
 The module `api.js` is publicly available via GitHub Pages. Import it directly in any ES-module-compatible script:
 
 ```js
-import {getRandomQuote, getAllQuotes, getQuoteByMovie, searchQuotes, getQuotesByYear} from "https://tiagomiguelcs.github.io/quotes-api/api.js";
+import {getRandomQuote, getAllQuotes, getQuoteByMovie, getQuoteByMovies, searchQuotes, getQuotesByYear} from "https://tiagomiguelcs.github.io/quotes-api/api.js";
 ```
 
 ### Available Functions
@@ -31,6 +31,7 @@ import {getRandomQuote, getAllQuotes, getQuoteByMovie, searchQuotes, getQuotesBy
 | `getAllQuotes()` | Returns all quotes |
 | `getRandomQuote()` | Returns a single random quote |
 | `getQuoteByMovie(movie)` | Returns a random quote matching the movie title (case-insensitive) |
+| `getQuoteByMovies(movies)` | Returns a random quote matching any movie title in the provided array (case-insensitive) |
 | `searchQuotes(text)` | Returns all quotes whose text contains the search string (case-insensitive) |
 | `getQuotesByYear(year)` | Returns all quotes from a given year |
 
