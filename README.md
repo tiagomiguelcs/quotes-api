@@ -30,7 +30,7 @@ import {getRandomQuote, getAllQuotes, getQuoteByMovie, searchQuotes, getQuotesBy
 |---|---|
 | `getAllQuotes()` | Returns all quotes |
 | `getRandomQuote()` | Returns a single random quote |
-| `getQuoteByMovie(movie)` | Returns the first quote matching the movie title (case-insensitive) |
+| `getQuoteByMovie(movie)` | Returns a random quote matching the movie title (case-insensitive) |
 | `searchQuotes(text)` | Returns all quotes whose text contains the search string (case-insensitive) |
 | `getQuotesByYear(year)` | Returns all quotes from a given year |
 
