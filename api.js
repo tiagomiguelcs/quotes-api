@@ -19,7 +19,8 @@ export async function getRandomQuote() {
 
 export async function getQuoteByMovie(movie) {
     const quotes = await loadQuotes();
-    return quotes.find(q => q.movie.toLowerCase() === movie.toLowerCase()
+    return quotes.find(
+        q => q.movie.toLowerCase() === movie.toLowerCase() || q.movie.toLowerCase().includes(movie.toLowerCase())
     );
 }
 
