@@ -1,6 +1,5 @@
 const BASE_URL = new URL(".", import.meta.url).origin;
-// const DATA_URL = `${BASE_URL}/quotes-api/data/movies.json`;
-const DATA_URL = `${BASE_URL}/data/movies.json`;
+const DATA_URL = `${BASE_URL}/quotes-api/data/movies.json`;
 
 async function loadQuotes() {
     const response = await fetch(DATA_URL);
